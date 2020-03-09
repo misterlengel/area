@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Compute the Area</title>
+</head>
+<body>
+<p>Compute the area of a right triangle:</p>
+<p>Length of Side A: <input type="text" id="sideA"></p>
+<p>Length of Side B: <input type="text" id="sideB"></p>
+<p><button onclick="triangleArea(document.getElementById('sideA').value,document.getElementById('sideB').value)">Compute</button></p>
+<p id="triangleArea"></p>
+
+<script>
+
+function triangleArea(sideA, sideB){
+	var length;
+	length = sideA * sideB * 0.5;
+	length = "Area is " + length;
+	document.getElementById('triangleArea').innerHTML = length;
+}
+
+</script>
+
+</body>
+</html>
